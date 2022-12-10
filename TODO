@@ -5,12 +5,15 @@ https://bitly.com/ ✅
 1.1) ckeditor ulanishi ruyhatdan otgan odam blog qosha olishi ✅
 2) /contact xabarlarni adminkada chiqadigan qilish kk, va tagida button(xabar yuborish [pochtasiga yuborilsin])
 
-3) adminka ozbekcha bolsin (faqat app nomlari)
+3) adminka ozbekcha bolsin (faqat app nomlari) ✅
 4) post detailda (preview, cancel, active degan buttonlar bolsin) ✅
 5) profile page (user ozining malumotlarini ozgartiradi, )
 6) post detailda yana 1ta button (pdf ga otkazish)
 7) githubga qoyish
+8) phone numberni chiroyli chiqarish
+object manager
 
+9) cron bilan cancel bolgan postlarni 7kundan keyin delete qilsin
 
 1. register ✅
 2. reset password (login page parolni unutib qoldirdim)
