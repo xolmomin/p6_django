@@ -4,7 +4,7 @@ from django.db.models import (
     Model,
     CharField,
     ForeignKey,
-    CASCADE, TextChoices, BooleanField, ImageField, EmailField
+    CASCADE, TextChoices, BooleanField, ImageField, EmailField, ManyToManyField
 )
 from django_resized import ResizedImageField
 
@@ -89,8 +89,14 @@ class User(AbstractUser):
 #         return self.name
 #
 #
-# class Region(Model):
-#     name = CharField(max_length=255)
-#
-#     def __str__(self):
-#         return self.name
+class Region(Model):
+    name = CharField(max_length=255)
+    user = ManyToManyField('apps.UserRegion')
+
+    def __str__(self):
+        return self.name
+
+class UserRegion(Model):
+    user = ForeignKey(User, CASCADE)
+    region = ForeignKey(Region, CASCADE)
+    is_active = BooleanField(default=False)
